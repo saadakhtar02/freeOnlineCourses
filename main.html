@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>FreeCourses</title>
+
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      color: #5D2BFF;
+    }
+
+    /* Navbar */
+    .dropdown-item:hover {
+      background-color: #FFD7CB;
+    }
+
+
+    /* section-1 */
+
+    /* #sec-1 {
+      display: flex;
+      grid-template-columns: minmax(200px,auto);
+    } */
+
+
+    .courseSec {
+      text-align: center;
+      margin: 20px 0px;
+      border: 2px solid #5D2BFF;
+      border-radius: 25px;
+    }
+
+    .courseSec h2 {
+      cursor: default;
+    }
+
+    .courses-png {
+      height: 20%;
+      width: 25%;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="py-3 mb-3">
+    <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+      <span>FreeCourses</span>
+      <div class="d-flex align-items-center">
+        <form class="w-100 me-3" role="search">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="flex-shrink-0 dropdown">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <img src="images.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small shadow">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="login.html">Sign out</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Course Section -->
+  <section class="container" id="sec-1">
+
+    <div class="courseSec">
+      <h2>HTML</h2>
+      <a class="img-fluid"
+        href="https://youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&si=zCCXSCwRv7T5FZ0P">
+        <img class="courses-png" src="img/webdev.png" alt="webdev">
+      </a>
+    </div>
+
+    <div class="courseSec">
+      <h2>Reactjs</h2>
+      <a class="container-fluid"
+        href="https://youtube.com/playlist?list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt&si=uaq6intgqXPCdfi5"><img
+          class="courses-png" src="img/reactjs.png" alt=""></a>
+    </div>
+
+    <div class="courseSec">
+      <h2>PHP</h2>
+      <a class="container-fluid"
+        href="https://youtube.com/playlist?list=PLu0W_9lII9aikXkRE0WxDt1vozo3hnmtR&si=j1taKQTmsMU8oqyw"><img
+          class="courses-png" src="img/php.png" alt=""></a>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
